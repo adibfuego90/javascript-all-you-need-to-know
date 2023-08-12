@@ -7,6 +7,8 @@ console.log(str);
 /* String Constructor:
 You can create strings using the String class constructor as well. This approach creates a new string object regardless of whether a string with the same content already exists in the pool. This can be useful when you want to ensure that a new object is created, rather than reusing an existing one. */
 
+// way to convert number to string
+
 /* Method -1 */
 let a = 10;
 let str2 = a.toString(a);
@@ -16,3 +18,9 @@ console.log(typeof str2);
 let b = 23;
 let str3 = String(b);
 console.log(str3);
+
+/* Method -3  */
+let num = 12;
+console.log(num); //number
+let str5 = num + "";
+console.log(str5); //string
