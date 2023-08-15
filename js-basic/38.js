@@ -1,21 +1,26 @@
-/* Escape notation in JavaScript is a way to represent special characters, control characters, and characters that cannot be typed directly in a string or a character. By using escape sequences, you can include these characters in your JavaScript strings. Here are some commonly used escape sequences in JavaScript:
+/* String Literal:
 
-\n: Newline
-\r: Carriage return
-\t: Tab
-\: Backslash
-': Single quote (applies to strings enclosed in double quotes)
-": Double quote (applies to strings enclosed in single quotes)
-\b: Backspace
-\f: Form feed
-\uXXXX: Unicode character with the hexadecimal code XXXX (4-digit hexadecimal code) */
+A string literal is a sequence of characters enclosed in double quotes. When you create a string using a literal, the compiler creates a string object in the memory pool called the "string pool" or "string intern pool." If a string with the same content already exists in the pool, the new string reference points to the existing object. */
+let str = "My name is String Literal";
+console.log(str);
 
-const newLine = "My name is adibur rahman \nYeap";
-// console.log(newLine);
+/* String Constructor:
+You can create strings using the String class constructor as well. This approach creates a new string object regardless of whether a string with the same content already exists in the pool. This can be useful when you want to ensure that a new object is created, rather than reusing an existing one. */
 
-const tabbed = "My name is tab \t yeah";
-// console.log(tabbed);
+// way to convert number to string
 
-const backslash =
-  "my name is backslash \\. My name is newline \n new line done";
-console.log(backslash);
+/* Method -1 */
+let a = 10;
+let str2 = a.toString(a);
+console.log(typeof str2);
+
+/* Method -2  */
+let b = 23;
+let str3 = String(b);
+console.log(str3);
+
+/* Method -3  */
+let num = 12;
+console.log(num); //number
+let str5 = num + "";
+console.log(str5); //string
