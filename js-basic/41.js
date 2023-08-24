@@ -61,3 +61,7 @@ let str10 = "apple,banana,orange";
 let fruits = str10.split(",");
 
 console.log(fruits); // Output: ["apple", "banana", "orange"]
+
+let string = "My name is adibur rahman isa good boy now ";
+let splitString = string.split(" ");
+console.log(splitString);
