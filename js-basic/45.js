@@ -30,3 +30,12 @@ for (let i = 0; i < arr.length; i++) {
     console.log("All Odd numbers:" + arr[i]);
   }
 }
+
+// Sum of all odd number
+let oddSum = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 !== 0) {
+    oddSum += arr[i];
+  }
+}
+console.log(oddSum);
