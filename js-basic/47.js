@@ -1,4 +1,4 @@
-// Data search in array
+// 00
 
 let arr = [12, 23, 34, 45, 1, 3, 4];
 let find = 112;
