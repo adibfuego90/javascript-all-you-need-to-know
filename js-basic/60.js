@@ -1,4 +1,4 @@
-// Define a function in javascript
+// Define a function in javascript : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
 
 // Declaration function : simple way
 function functionName(x, y) {
