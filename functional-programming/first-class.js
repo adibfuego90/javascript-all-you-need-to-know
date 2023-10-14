@@ -2,8 +2,7 @@
 2.A function can be stored in an array
 3.A function can be stored in an object
 4.We can create function as need
-5.We can pass Function as a arguments
-6.We can return function from another function */
+ */
 
 function add(a, b) {
   return a + b;
