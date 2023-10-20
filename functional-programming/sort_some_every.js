@@ -14,7 +14,7 @@ console.log(arr); */
 });
 console.log(arr); */
 
-let objArr = [
+/* let objArr = [
   { name: "A", age: 21 },
   { name: "B", age: 20 },
   { name: "C", age: 23 },
@@ -30,3 +30,23 @@ objArr.sort(function (a, b) {
   }
 });
 console.log(objArr);
+ */
+
+// is it positive number in array or not?
+let arr2 = [23, 34, 23, 4, 5, 56, 7, 8, 9, 2];
+let result1 = arr2.every(function (value) {
+  return value >= 0;
+});
+console.log(result1);
+
+// is it even number or not?
+let result2 = arr2.every(function (value) {
+  return value % 2 === 0;
+});
+console.log(result2);
+
+//some method : return true if any element satisfied the rule
+let result3 = arr2.some(function (value) {
+  return value < 0;
+});
+console.log(result3);
