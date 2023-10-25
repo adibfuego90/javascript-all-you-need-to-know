@@ -34,9 +34,24 @@ for (let i = 0; i <= 100; i++) {
 }
 console.log(result); */
 
-// Other way of do that
+/* // Other way of do that
 let result = 0;
 for (let i = 1; i <= 100; i += 2) {
   result += i;
 }
+console.log(result); */
+
+// Recursive way :
+function sumOfOddNumber(n) {
+  if (n <= 0) {
+    return 0;
+  } else {
+    if (n % 2 !== 0) {
+      return n + sumOfOddNumber(n - 1);
+    } else {
+      return sumOfOddNumber(n - 1);
+    }
+  }
+}
+let result = sumOfOddNumber(7);
 console.log(result);
