@@ -42,7 +42,7 @@ for (let i = 1; i <= 100; i += 2) {
 console.log(result); */
 
 // Recursive way :
-function sumOfOddNumber(n) {
+/* function sumOfOddNumber(n) {
   if (n <= 0) {
     return 0;
   } else {
@@ -55,3 +55,32 @@ function sumOfOddNumber(n) {
 }
 let result = sumOfOddNumber(7);
 console.log(result);
+ */
+
+/* let array = [1, 22, 33, 4];
+
+const result = array.find(function (value) {
+  return value === 11;
+});
+console.log(result);
+ */
+
+/* let arr = [22, 3, 4, 5, 6];
+let index = arr.findIndex(function (value) {
+  return value === 22;
+});
+console.log(index); */
+
+/* let arr = [222, 333, 4444444444, 4];
+function myFind(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      return arr[i];
+    }
+  }
+}
+
+let result = myFind(arr, function (value) {
+  return value === 222;
+});
+console.log(result); */
